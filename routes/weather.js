@@ -8,7 +8,7 @@ weatherRoute.get("/", (req, res)=>{
 
 weatherRoute.post("/", (req, res)=>{
         const city = req.body.cityName
-        const appiKey = "7acc99582970d579bbca2891afca1fdd" 
+        const appiKey = "" 
         const unit = req.body.unit
 
         const url = "https://api.openweathermap.org/data/2.5/weather?q="+ city + "&appid"+"="+appiKey+"&units"+"="+unit
